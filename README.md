@@ -24,5 +24,9 @@ An AngularJS directive providing HTML like <datalist></datalist> functionality.
 
 3. Use directive inside your application:
       ```html
-      <aurora-data-list items="ctrl.myItemsList" to-show-property="itemProperty" on-select="doSomething(selectedItem)"></aurora-data-list>
+      <aurora-data-list 
+         items="ctrl.myItemsList" 
+         to-show-property="itemProperty"
+         on-select="doSomething(selectedItem)">
+      </aurora-data-list>
       ```
