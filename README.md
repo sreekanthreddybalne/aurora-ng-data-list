@@ -12,10 +12,10 @@ An AngularJS directive providing HTML like <datalist></datalist> functionality.
 ## Getting started
 
 1. Add a `<script>` tag just after AngularJS framework.
-  ```html
-  <script src="./angular.min.js"></script>
-  <script src="./core/dist/aurora-data-list.js"></script>
-  ```
+    ```html
+    <script src="./angular.min.js"></script>
+    <script src="./core/dist/aurora-data-list.js"></script>
+    ```
 
 2. Add `auroraDataList` module as a dependency to your application:
    ```javascript
