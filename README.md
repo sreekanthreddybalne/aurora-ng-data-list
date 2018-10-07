@@ -17,15 +17,15 @@ An AngularJS directive providing HTML like <datalist></datalist> functionality.
     <script src="./core/dist/aurora-ng-data-list.js"></script>
     ```
 
-2. Add `auroraDataList` module as a dependency to your application:
+2. Add `auroraNgDataList` module as a dependency to your application:
    ```javascript
    angular.module('myApp', ['auroraNgDataList']);
    ```
 
 3. Use directive inside your application:
       ```html
-      <aurora-ng-data-list 
-         items="myItemsList" 
+      <aurora-ng-data-list
+         items="myItemsList"
          to-show-property="itemProperty"
          on-select="doSomething(selectedItem)">
       </aurora-ng-data-list>

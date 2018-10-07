@@ -1,14 +1,14 @@
 <style>
-  .selectable-data-list{
+  .aurora-ng-data-list{
     display: inline-block;
     position: relative;
     background: #fff;
   }
-  .selectable-data-list input,
+  .aurora-ng-data-list input,
   .selectable-data-list .items-holder{
     width: 400px;
   }
-  .selectable-data-list .items-holder{
+  .aurora-ng-data-list .items-holder{
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -17,17 +17,17 @@
     position: absolute;
     z-index: 100;
   }
-  .selectable-data-list .items-holder > span{
+  .aurora-ng-data-list .items-holder > span{
     cursor: pointer;
   }
-  .selectable-data-list .items-holder > span:hover{
+  .aurora-ng-data-list .items-holder > span:hover{
     background: rgba(128,128,128,0.5);
   }
-  .selectable-data-list .items-holder > span.current-item{
+  .aurora-ng-data-list .items-holder > span.current-item{
   background: green;
   }
 </style>
-<div class="selectable-data-list">
+<div class="aurora-ng-data-list">
   <input ng-model="toAddItemQuery" up-arrow-key-press="upArrowKeyPressed()" down-arrow-key-press="downArrowKeyPressed()" enter-key-press="pickItem({selectedItem:currentItem})" ng-change="setSelectToInitial()"/>
   <div class="items-holder">
     <span ng-repeat="item in (filteredItems = (items | filter:toAddItemQuery))" ng-class="currentItem==item?'current-item':''" ng-click="pickItem({selectedItem:item})">{{item[toShowProperty]}}</span>

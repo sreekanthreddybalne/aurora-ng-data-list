@@ -1,12 +1,6 @@
 angular.
 module('directive').
-controller('selectableDataListController', [function(){
-  var self = this;
-  self.downArrowPressed = function(){
-    console.log("ppp");
-  }
-}]).
-directive('selectableDataList', [function(){
+directive('auroraNgDataList', [function(){
   return{
     restrict: 'E',
     replace: false,
@@ -19,7 +13,7 @@ directive('selectableDataList', [function(){
     transclude: true,
     templateUrl: '/static/js/app/directive/data-list/data-list.template.html',
     controller: ['$scope', 'Aurora',
-    function selectableDataListController($scope, Aurora) {
+    function auroraNgDataListController($scope, Aurora) {
         var self = this;
         $scope.currentIndex=-1;
         $scope.setSelectToInitial = function(){
